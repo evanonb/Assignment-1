@@ -3,46 +3,48 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Page 1</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <header>
-      <img src="images/Carolina Productions Logo Banner.jpeg" height= 150 width = 500>
-    </header>
+    <div class="grid-container">
+      <header class="item1 grid-white">
+        <img src="images/Carolina Productions Logo Banner.jpeg" height= 150 width = 500>
+      </header>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="page1.html">Page 1</a></li>
-        <li><a href="page2.html">Page 2</a></li>
-        <li><a href="https://www.columbusstate.edu/">CSU Homepage</a></li>
-      </ul>
-    </nav>
+      <nav class="item2 grid-black">
+        <ul>
+          <li><button class="navbutton"><a href="index.html">Home</a></button></li>
+          <li><button class="navbutton"><b>Page 1</b></button></li>
+          <li><button class="navbutton"><a href="page2.html">Page 2</a></button></li>
+          <li><button class="navbutton"><a href="https://www.columbusstate.edu/">CSU</a></button></li>
+        </ul>
+      </nav>
 
-    <main>
-      <h4>HTML Concepts</h4>
-      <ol type="I">
-        <li class="blueback">Semantic Tags</li>
-          <ol type="i">
-            <li>Separate the HTML into chunks for organization and easy reading</li>
-            <li class="blueback">Gives CSS the ability to edit large portions of code easily</li>
-          </ol>
-        <li>CSS Integration</li>
-          <ol type="i">
-            <li class="blueback">Can change colors of text or backgrounds</li>
-            <li>Can be used to control the styles for individual IDs, classes, or tags</li>
-          </ol>
-        <li class="blueback">Lists</li>
-          <ol type="i">
-              <li>Unordered lists standardly create dots before each entry, unless specified otherwise</li>
-              <li class="blueback">Ordered lists standardly create numbers before each entry, unless specified otherwise</li>
+      <main class="item3 grid-white">
+        <h4>HTML Concepts</h4>
+        <ol type="I">
+          <li class="blueback">Semantic Tags</li>
+            <ol type="i">
+              <li>Separate the HTML into chunks for organization and easy reading</li>
+              <li class="blueback">Gives CSS the ability to edit large portions of code easily</li>
             </ol>
-      </ol>
-    </main>
-    <footer>
-      <h6>Carolina Productions LLC<br>(910) 019-9901<br>info@carolinapro.com</h6>
-    </footer>
+          <li>CSS Integration</li>
+            <ol type="i">
+              <li class="blueback">Can change colors of text or backgrounds</li>
+              <li>Can be used to control the styles for individual IDs, classes, or tags</li>
+            </ol>
+          <li class="blueback">Lists</li>
+            <ol type="i">
+                <li>Unordered lists standardly create dots before each entry, unless specified otherwise</li>
+                <li class="blueback">Ordered lists standardly create numbers before each entry, unless specified otherwise</li>
+              </ol>
+        </ol>
+      </main>
+      <footer class="item4 grid-white">
+        <h6>Carolina Productions LLC<br>(910) 019-9901<br>info@carolinapro.com</h6>
+      </footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
