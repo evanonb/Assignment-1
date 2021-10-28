@@ -89,10 +89,15 @@ nav, main {padding: 20px;}
     grid-gap: 10px;
     background-color: transparent;
   }
+  /*
+  button {
+    width: auto;
+    height: auto;
+  }*/
 }
 
 /* nav buttons section */
-a {
+a.else {
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -129,6 +134,7 @@ nav ul {
   text-align: center;
   font-size: 1.5em;
   border-radius: 12px;
+  font-style: bold;
 }
 
 .navbutton.current {
