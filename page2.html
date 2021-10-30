@@ -1,57 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Page 2</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <header>
-      <img src="images/Carolina Productions Logo Banner.jpeg" height= 150 width = 500>
-    </header>
+    <div class="grid-container-b">
+      <header class="item1 grid-white">
+        <img src="images\logo-white.jpeg" width="75%">
+      </header>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="page1.html">Page 1</a></li>
-        <li><b>Page 2</b></li>
-        <li><a href="https://www.columbusstate.edu/">CSU Homepage</a></li>
-      </ul>
-    </nav>
+      <nav class="item2 grid-white">
+        <ul>
+          <li><a href="index.html"><button class="navbutton"><b>Home</b></button></a></li>
+          <li><a href="page1.html"><button class="navbutton"><b>Page 1</b></button></a></li>
+          <li><button class="navbutton current"><b>Page 2</b></button></li>
+          <li><a href="page3.html"><button class="navbutton"><b>Page 3</b></button></a></li>
+          <li><a href="https://www.columbusstate.edu/"><button class="navbutton"><b>CSU</b></button></a></li>
+        </ul>
+      </nav>
 
-    <main>
-      <table>
-        <tr>
-          <th class="tableheader">Tags</th>
-          <th class="tableheader">Attributes</th>
-        </tr>
-        <tr>
-          <td>
-            <ul>
-              <li class="grayback">&ltnav&gt</li>
-              <li class="blueback">&ltcode&gt</li>
-              <li class="grayback">&lth4&gt</li>
-              <li class="blueback">&ltb&gt</li>
-              <li class="grayback">&ltfooter&gt</li>
-            </ul>
-          </td>
-          <td>
-            <ol>
-              <li class="grayback">style</li>
-              <li class="blueback">height</li>
-              <li class="grayback">href</li>
-              <li class="blueback">width</li>
-              <li class="grayback">src</li>
-            </ol>
-          </td>
-        </tr>
-      </table>
-    </main>
+      <main class="item3 grid-white">
+        <table>
+          <tr>
+            <th class="tableheader">Tags</th>
+            <th class="tableheader">Attributes</th>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li class="grayback">&ltnav&gt</li>
+                <li class="blueback">&ltcode&gt</li>
+                <li class="grayback">&lth4&gt</li>
+                <li class="blueback">&ltb&gt</li>
+                <li class="grayback">&ltfooter&gt</li>
+              </ul>
+            </td>
+            <td>
+              <ol>
+                <li class="grayback">style</li>
+                <li class="blueback">height</li>
+                <li class="grayback">href</li>
+                <li class="blueback">width</li>
+                <li class="grayback">src</li>
+              </ol>
+            </td>
+          </tr>
+        </table>
+      </main>
 
-    <footer>
-      <h6>Carolina Productions LLC<br>(910) 019-9901<br>info@carolinapro.com</h6>
-    </footer>
+      <aside class="item5 grid-white">
+        <p>Make a webpage that uses a table to create two columns. In the left column should be a bulleted list of 5 html tags you have learned about. In the right column should be a numbered list of 5 attributes of html tags you have learned about. There should be a header row with HTML tags and Attributes.</p>
+      </aside>
+
+      <footer class="item4 grid-white">
+        <h6>Carolina Productions LLC<br>(910) 019-9901<br>info@carolinapro.com</h6>
+      </footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
