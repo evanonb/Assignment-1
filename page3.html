@@ -25,38 +25,24 @@
       <main class="item3 grid-white">
         <h1>Welcome to Carolina Productions!</h1>
         <h4>Home to Some of the Greatest Movies Ever Made</h3>
-        <form action="https://webdevbasics.net/scripts/yoga.php" method="POST">
+        <form name="usrForm" onsubmit="return validatePassword()" action="https://webdevbasics.net/scripts/yoga.php" method="POST">
           <label for="firstName">First Name:</label><br>
           <input type="text" id="firstName" name="First Name" size="20" maxlength="50" required></input><br><br>
+          
           <label for="lastName">Last Name:</label><br>
           <input type="text" id="lastName" name="Last Name" size="20" maxlength="50" required></input><br><br>
           
           <label for="phonenum">Phone Number:</label><br>
-          <input type="text" id "phonenum" name="Phone Number" size="10" maxlength="10" pattern="/[0-9]/g" required></input><br><br>
+          <input type="text" id "phonenum" name="Phone Number" size="10" maxlength="12" pattern="^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" title="Must contain 10 digits in the format ###-###-####" required></input><br><br>
 
           <label for="email">Email:</label><br>
-          <input type="email" id="email" name="Email" required></label><br><br>
+          <input type="email" id="email" name="Email" required></input><br><br>
 
-          <label for="state">Choose Your State:</label><br>
-          <select id="state" name="State" required>
-            <option value="AL">AL</option>
-            <option value="FL">FL</option>
-            <option value="GA">GA</option>
-          </select><br><br>
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="Password" pattern="^[0-9a-zA-Z]{8,}$" title="Must be at least 8 characters long" required></input><br><br>
 
-          <label for="maritalStatus">Marital Status:</label><br>
-          <input type="radio" id="maritalStatus" name="Marital Status" value="Single">Single</input>
-          <input type="radio" id="maritalStatus" name="Marital Status" value="Married">Married</input><br><br>
-
-          <input type="checkbox" id="skills1" name="Skills" value="Python"></input>
-          <label for="Python">Python</label><br>
-          <input type="checkbox" id="skills2" name="Skills" value="C#">
-          <label for="C#">C#</label><br>
-          <input type="checkbox" id="skills3" name="Skills" value="HTML"></input>
-          <label for="HTML">HTML</label><br><br>
-
-          <label for="comments">Comments?</label><br>
-          <textarea id="comments" name="Comments"></textarea><br><br>
+          <label for="password2">Re-Enter Password:</label><br>
+          <input type="password" id="password2" name="Password2" pattern="^[0-9a-zA-Z]{8,}$" title="Must match password entered above" required></input><br><br>
 
           <input type="submit" value="Submit Form">
         </form>
