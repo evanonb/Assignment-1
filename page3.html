@@ -38,12 +38,18 @@
           <label for="email">Email:</label><br>
           <input type="email" id="email" name="Email" required></input><br><br>
 
-          <label for="password">Password:</label><br>
-          <input type="password" id="password" name="Password" pattern="^[0-9a-zA-Z]{8,}$" title="Must be at least 8 characters long" required></input><br><br>
+          <label for="usrName">Create Username:</label><br>
+          <input type="text" id="usrName" name="Username" size="20" maxlength="50" required></input><br><br>
+
+          <label for="password">Create Password:</label><br>
+          <input type="password" id="password" name="Password" title="Must be at least 8 characters long" required></input><br><br>
 
           <label for="password2">Re-Enter Password:</label><br>
-          <input type="password" id="password2" name="Password2" pattern="^[0-9a-zA-Z]{8,}$" title="Must match password entered above" required></input><br><br>
+          <input type="password" id="password2" name="Password2" title="Must match password entered above" required></input><br><br>
 
+          <label for="comments">Comments?</label><br>
+          <textarea id="comments" name="Comments"></textarea><br><br>
+          
           <input type="submit" value="Submit Form">
         </form>
       </main>
